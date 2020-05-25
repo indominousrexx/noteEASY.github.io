@@ -62,6 +62,7 @@ body {
       background-color: rgb(205, 235, 247);
       overflow-x: hidden;
       overflow-y: scroll;
+      
     }
 
     #notecard {
@@ -73,4 +74,23 @@ body {
       cursor: zoom-in;
       transition: transform .5s ease;
     }
+    #addTxt2 {
+      background-color: rgb(205, 235, 247);
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    #gap {
+      padding-top: .5rem;
+    }
+    #hrj {
+      border-top: 1px solid #000000;
+      width: 100%;
+      margin-top: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .end {
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+    }
     
+

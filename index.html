@@ -72,7 +72,9 @@
             <div class="card-body">
                 <h5 class="card-title">Add a note</h5>
                 <div class="form-group">
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                  <b><textarea class="form-control" id="addTxt2" rows="1" placeholder="title"></textarea></b>
+                  <div id="gap"></div>
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="content"></textarea>
                 </div>
                 <button class="btn btn-outline-light my-2 my-sm-0" id="addBtn">Add Note</button>
             </div>
@@ -81,10 +83,20 @@
         <h1>Your Notes</h1>
         <hr id="hr2">
         <div id="notes" class="row container-fluid">
-          <div class="noteCard my-2 mx-2 card" id="notecard" style="width: 18rem;">
+          <div class="noteCard my-3 mx-2 card" id="notecard" style="width: 18rem;">
             
         </div>
     </div>
+
+    <footer class="end">
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-12">
+            <h5>&copy; 2020 indominousrexx.github.io</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
