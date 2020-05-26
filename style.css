@@ -1,12 +1,15 @@
 body {
-  background-image: url("8IRPlq (6).jpg");
-  opacity: 4;
+  background-image: url("blue-wrinkled-paper-texture.jpg");
+  margin: 0;
+  height: 100%;
   }
   .navbar-dark .navbar-nav .nav-link.active,
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #65fce5;
   }
-  
+  #nav1 {
+    background: rgba(0, 0, 0, 0.9);
+  }
   #search {
   padding-top: 4.6rem;
   padding-bottom: 1rem;
@@ -19,7 +22,7 @@ body {
     color: #65fce5;
   }
   #notes {
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0);
     transition: all 0.5s;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -30,52 +33,56 @@ body {
   }
   #card {
     box-shadow: 1px 6px 10px;
-    background: linear-gradient(to bottom,rgb(167, 208, 247), rgb(36, 83, 170));
+    background: linear-gradient(to bottom,rgb(153, 200, 228), rgb(0, 132, 194));
+    border-radius: 1rem;
   }
      
   
   #welcome h1 {
     font-family: sans-serif;
+    color: rgb(160, 239, 250);
     margin: 30px auto;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     max-width: 600px;
+    font-weight: 600;
     position: relative;
     font-size: 3rem;
     letter-spacing: 0.2rem;
-    text-shadow: .1rem .1rem .4rem rgb(97, 120, 128);
+    text-shadow: .2rem .2rem .4rem rgb(0, 17, 39);
   }
   
     #hr1 {
-      border-top: 1px solid #000000;
+      border-top: 1px solid #cff3f5;
       width: 50%;
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
     #hr2 {
-      border-top: 1px solid #000000;
+      border-top: 1px solid #cdf1f3;
       width: 50%;
       margin-top: 0.8rem;
       margin-bottom: 1rem;
     }
     #addTxt {
-      background-color: rgb(205, 235, 247);
+      background-color: rgb(198, 240, 233);
       overflow-x: hidden;
       overflow-y: scroll;
       
     }
 
     #notecard {
-      background: linear-gradient(to bottom,rgb(211, 154, 192), rgb(119, 32, 73)); 
-      box-shadow: 1px 6px 10px;
+      background: linear-gradient(to bottom,rgb(154, 225, 241), rgb(0, 204, 255)); 
+      box-shadow: 1px 10px 20px;
+      border-radius: 1rem;
     }
     #notecard:hover {
       transform: scale(1.1);
-      cursor: zoom-in;
-      transition: transform .5s ease;
+      cursor: pointer;
+      transition: transform .4s ease;
     }
     #addTxt2 {
-      background-color: rgb(205, 235, 247);
+      background-color:rgb(198, 240, 233);
       overflow-x: hidden;
       overflow-y: scroll;
     }
@@ -91,6 +98,13 @@ body {
     .end {
       padding-top: 5rem;
       padding-bottom: 3rem;
+      color: rgb(255, 255, 255);
+     
     }
-    
+    #p {
+      color: rgb(202, 240, 240);
+      font-size: 1.2rem;
+      align-items: center;
+      text-shadow: .1rem .1rem .1rem rgb(0, 10, 24);
+    }
 
