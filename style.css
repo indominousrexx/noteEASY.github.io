@@ -2,6 +2,7 @@ body {
   background-image: url("blue-wrinkled-paper-texture.jpg");
   margin: 0;
   height: 100%;
+  
   }
   .navbar-dark .navbar-nav .nav-link.active,
   .navbar-dark .navbar-nav .nav-link:hover {
@@ -33,7 +34,7 @@ body {
   }
   #card {
     box-shadow: 1px 6px 10px;
-    background: linear-gradient(to bottom,rgb(153, 200, 228), rgb(0, 132, 194));
+    background: linear-gradient(to bottom,rgb(153, 200, 228), rgb(0, 116, 136));
     border-radius: 1rem;
   }
      
@@ -68,11 +69,12 @@ body {
       background-color: rgb(198, 240, 233);
       overflow-x: hidden;
       overflow-y: scroll;
+      border-radius: 0.5rem;
       
     }
 
     #notecard {
-      background: linear-gradient(to bottom,rgb(154, 225, 241), rgb(0, 204, 255)); 
+      background: linear-gradient(to bottom,rgb(154,225,241),rgb(0,204,255));
       box-shadow: 1px 10px 20px;
       border-radius: 1rem;
     }
@@ -85,6 +87,7 @@ body {
       background-color:rgb(198, 240, 233);
       overflow-x: hidden;
       overflow-y: scroll;
+      border-radius: 0.5rem;
     }
     #gap {
       padding-top: .5rem;
@@ -107,4 +110,36 @@ body {
       align-items: center;
       text-shadow: .1rem .1rem .1rem rgb(0, 10, 24);
     }
+    #edit {
+    outline: none;
+    }
+#addBtn {
+  border-radius: 5px;
+  background: linear-gradient(90deg,#755bea,#ff72c0);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
 
+
+span {
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+  overflow: hidden;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 900px;
+    height: 900px;
+    opacity: 0;
+  }
+}

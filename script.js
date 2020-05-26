@@ -1,4 +1,20 @@
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    let x = e.clientX - e.target.offsetLeft;
+    let y = e.clientY - e.target.offsetLeft;
 
+    let ripples = document.createElement('span');
+    ripples.style.left = x + 'px';
+    ripples.style.top = y + 'px';
+    this.appendChild(ripples);
+
+    setTimeout(() => {
+      ripples.remove()
+    },1000);
+
+  })
+})
 showNotes();
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function(e) {
@@ -18,6 +34,8 @@ addBtn.addEventListener("click", function(e) {
   showNotes();
 });
 
+
+
 function showNotes() {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
@@ -28,13 +46,13 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function(element, index) {
     html += `
-            <div class="noteCard my-3 mx-4 card" id="notecard" style="width: 18rem;">
+            <div class="noteCard my-3 mx-3 card" id="notecard" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Note ${index + 1}</h5>
-                        <div class="editNote" contenteditable>
-                           <p class="card-text"> ${element}</p>
+                        <div class="editNote" id="edit" contenteditable>
+                            <p class="card-text"> ${element}</p>
                         </div>   
-                        <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-outline-dark my-2 my-sm-0">Delete Note</button>
+                        <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-outline-dark my-2 my-sm-0">Delete Note</button>
                     </div>
                 </div>`;
   });
