@@ -28,10 +28,12 @@ function showNotes() {
   let html = "";
   notesObj.forEach(function(element, index) {
     html += `
-            <div class="noteCard my-3 mx-2 card" contenteditable id="notecard" style="width: 18rem;">
+            <div class="noteCard my-3 mx-4 card" id="notecard" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Note ${index + 1}</h5>
-                        <p class="card-text"> ${element}</p>
+                        <div class="editNote" contenteditable>
+                           <p class="card-text"> ${element}</p>
+                        </div>   
                         <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-outline-dark my-2 my-sm-0">Delete Note</button>
                     </div>
                 </div>`;
@@ -57,11 +59,6 @@ function deleteNote(index) {
   localStorage.setItem("notes", JSON.stringify(notesObj));
   showNotes();
 }
-
-function editNote(index) {
-
-}
-
 
 let search = document.getElementById('searchTxt');
 search.addEventListener("input", function(){
