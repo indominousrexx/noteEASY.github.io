@@ -53,6 +53,7 @@ function showNotes() {
                             <p class="card-text"> ${element}</p>
                         </div>   
                         <button id="${index}" onclick="deleteNote(this.id)" class="btn btn-outline-dark my-2 my-sm-0">Delete Note</button>
+                        <button class="btn btn-outline-dark my-2 my-sm-0" id="${index}" onclick="myFunction(this.id)">Change Color</button>
                     </div>
                 </div>`;
   });
@@ -76,6 +77,13 @@ function deleteNote(index) {
   notesObj.splice(index, 1);
   localStorage.setItem("notes", JSON.stringify(notesObj));
   showNotes();
+}
+
+function myFunction(index) {
+  var colors = ["lime", "aqua", "orange", "hotpink", "fuchsia", "plum", "gold", "greenyellow", "springgreen", "mistyrose", "silver", "livingcoral", "turquoiseblue", "orchid", "#50bfe6", "#fd5b78", "#ff9933", "#ffcc33", "#66ff66", "#db91ef", "#ffcff1", "#14a989", "#fc80a5", "#ff8833", "#a0e6ff", "#ff6d3a", "#ff4466", "lightblue", "cyan"],
+  selectedColor = colors[Math.floor(Math.random() * colors.length)]
+  $(".noteCard").css("background-color", selectedColor);
+
 }
 
 let search = document.getElementById('searchTxt');

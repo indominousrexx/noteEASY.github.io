@@ -34,7 +34,7 @@ body {
   }
   #card {
     box-shadow: 1px 6px 10px;
-    background: linear-gradient(to bottom,rgb(153, 200, 228), rgb(0, 116, 136));
+    background: linear-gradient(to bottom,rgb(153, 200, 228), rgb(0, 147, 167));
     border-radius: 1rem;
   }
      
@@ -66,7 +66,7 @@ body {
       margin-bottom: 1rem;
     }
     #addTxt {
-      background-color: rgb(198, 240, 233);
+      background-color: rgb(223, 255, 250);
       overflow-x: hidden;
       overflow-y: scroll;
       border-radius: 0.5rem;
@@ -74,7 +74,8 @@ body {
     }
 
     #notecard {
-      background: linear-gradient(to bottom,rgb(154,225,241),rgb(0,204,255));
+      background-color: #f5b1e1;
+      transition: background-color 0.3s ease;
       box-shadow: 1px 10px 20px;
       border-radius: 1rem;
     }
@@ -84,7 +85,7 @@ body {
       transition: transform .4s ease;
     }
     #addTxt2 {
-      background-color:rgb(198, 240, 233);
+      background-color:rgb(223, 255, 250);
       overflow-x: hidden;
       overflow-y: scroll;
       border-radius: 0.5rem;
